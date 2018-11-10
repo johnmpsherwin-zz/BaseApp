@@ -48,7 +48,8 @@ const ProfileNavigationStack = new createStackNavigator(
   {
     navigationOptions: {
       headerStyle: {
-        backgroundColor: "#FFF"
+        backgroundColor: "#FFF",
+        opacity: 0
       },
       headerTitleStyle: {
         fontFamily: "Avenir",
@@ -67,7 +68,7 @@ const TabBar = new createBottomTabNavigator(
       screen: FriendsNavigationStack
     },
     Profile: {
-      screen: ProfileNavigationStack,
+      screen: Profile,
     }
   },
   {
